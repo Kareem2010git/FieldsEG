@@ -62,7 +62,7 @@ export default function Booking() {
 
       // 4. بناء الرابط المختصر والمباشر للإيصال
       const baseUrl = window.location.origin;
-      const uploadLink = `${baseUrl}/upload-receipt?fieldId=${booking.id}`;
+      const uploadLink = `${baseUrl}/?fieldId=${booking.id}`;
 
       // 5. تجهيز الرسالة المبسطة لتتوافق تماماً مع واتساب ويب وتفتح بال النص
       const message = `مرحباً، تم حجز الملعب بنجاح.\nالتاريخ: ${selectedDate}\nالوقت: ${selectedTime}\n\nبرجاء رفع الإيصال من هنا:\n${uploadLink}`;
